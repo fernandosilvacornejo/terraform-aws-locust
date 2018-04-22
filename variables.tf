@@ -7,7 +7,7 @@ variable "ssh_key_name" {}
 variable "target_host" {}
 
 variable "region" {
-    default = "eu-central-1"
+    default = "us-east-1"
 }
 
 variable "master_instance_type" {
@@ -19,7 +19,7 @@ variable "slave_instance_type" {
 }
 
 variable "ami" {
-    default = "ami-e4988188"
+    default = "ami-9e2685e3"
 }
 
 variable "num_slaves" {
@@ -27,9 +27,15 @@ variable "num_slaves" {
 }
 
 variable "cluster_name" {
-	default = "testing"
+	default = "stress"
 }
 
 variable "test_file" {
 	default = "test.py"
+}
+
+variable "vpc_cidr_block" {
+}
+
+variable "subnet_cidr_block" {
 }

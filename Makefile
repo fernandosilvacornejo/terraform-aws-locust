@@ -12,4 +12,5 @@ apply: public_ip.txt
 	terraform apply
 
 prepare-update:
+	terraform init
 	bash -c scripts/prepare-update.sh

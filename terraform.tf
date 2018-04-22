@@ -5,7 +5,7 @@ provider "aws" {
 }
 
 resource "aws_vpc" "locust" {
-    cidr_block = "172.20.0.0/16"
+    cidr_block = "${var.vpc_cidr_block}"
     enable_dns_support = true
     enable_dns_hostnames = true
     tags {
@@ -15,7 +15,7 @@ resource "aws_vpc" "locust" {
 
 resource "aws_subnet" "locust" {
     vpc_id = "${aws_vpc.locust.id}"
-    cidr_block = "172.20.250.0/24"
+    cidr_block = "${var.subnet_cidr_block}"
 
     tags {
         Name = "locust-${var.cluster_name}"
