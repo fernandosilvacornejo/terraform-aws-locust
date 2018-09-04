@@ -1,3 +1,4 @@
+
 plan: public_ip.txt
 	terraform plan
 
