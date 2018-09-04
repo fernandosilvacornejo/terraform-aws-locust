@@ -1,5 +1,6 @@
 # terraform-aws-locust
-Deploy a locust.io stress test cluster on AWS based on CoreOS/Docker
+Deploy a locust.io stress test cluster on AWS based on CoreOS/Docker.
+
 
 ## WARNING!!!
 
